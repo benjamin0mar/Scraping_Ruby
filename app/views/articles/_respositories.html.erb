@@ -1,0 +1,18 @@
+
+<div class="list_repository">
+  <% @repositoriesArray.each do |title, date,user_name| %>
+  <div class="repo_container">
+    <div class="title_repo">
+      <%=link_to title, "https://github.com/#{user_name}/#{title}"%>
+      <b class="actualizacion_repo">
+        Updated
+        <%=date%>
+      </b>
+    </div>
+
+    <div class="lenguaje_repo">
+    </div>
+
+  </div>
+  <% end %>
+</div>

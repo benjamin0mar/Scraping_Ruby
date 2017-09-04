@@ -1,0 +1,9 @@
+<div class="profile_content">
+  <% @profileArray.each do |img,name,username| %>
+  <img src="<%=img%>" width="200"/>
+  <div class="user_info">
+    <h3><%=name%></h3>
+    <small>@<%=username%></small>
+  </div>
+  <% end %>
+</div>

@@ -1,0 +1,8 @@
+
+$('#profile').fadeIn( "slow", function() {
+  $(this).html("<%= escape_javascript(render partial: 'profile')%>");
+});
+
+$('#respositories').fadeIn( "slow", function() {
+  $(this).html("<%= escape_javascript(render partial: 'respositories')%>");
+});

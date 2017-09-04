@@ -1,0 +1,26 @@
+<div class="search">
+  <div class="search_wrapper">
+    <%= form_tag root_path, method: "get", remote: true do %>
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <div class="btn_icon">
+      <%= text_field_tag :user_name,"", id: "txt_search" %>
+      <i id="btn_show" class="ion-android-search"></i>
+      <i id="btn_hide" class="ion-android-close"></i>
+      <i id="btn_load" class="ion-load-b"></i>
+
+    </div>
+    <%= submit_tag "buscar", id: "btn_search" %>
+    <% end %>
+    <div class="logo">
+      <i class="ion-social-octocat"></i>
+    </div>
+  </div>
+</div>
+
+
+<div id="profile" class="profile">
+</div>
+
+</div>
+  <div id="respositories" class="respositories">
+</div>
